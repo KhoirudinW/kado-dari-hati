@@ -19,7 +19,7 @@ export function Game3_DragHeart({ onSuccess }: { onSuccess: () => void }) {
     <div className="space-y-6 text-center">
       <p className="text-gray-700 font-medium">Geser hatinya ke pasangan 💖</p>
 
-      <div className="relative flex items-center justify-between w-full h-1 max-w-md mx-auto mt-6">
+      <div className="relative flex items-center justify-between w-full max-w-md mx-auto mt-6">
         {/* Kamu */}
         <div className="flex flex-col items-center gap-2">
           <div className="w-20 h-20 rounded-full bg-pink-200 flex items-center justify-center text-3xl select-none">
