@@ -59,7 +59,7 @@ export function Game3_DragHeart({ onSuccess }: { onSuccess: () => void }) {
       </div>
 
       {/* Slider */}
-      <div className="w-full max-w-md mx-auto mt-4">
+      <div className="w-full max-w-md mx-auto mt-8">
         <input
           type="range"
           min="0"
