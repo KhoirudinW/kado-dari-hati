@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Game1_Name } from './component/minigames/game1';
 import { Game2_ChoosePhoto } from './component/minigames/game2';
 import { Game3_DragHeart } from './component/minigames/game3';
-import { EXPECTED_NAME, DUMMY_IMAGES } from './component/utils';
 import { Game4_RevealParts } from './component/minigames/game4';
 import { Game5_Puzzle } from './component/minigames/game5';
+import { EXPECTED_NAME, IMAGES } from './component/utils';
 import "./globals.css";
 
 type FormState = {
@@ -353,8 +353,8 @@ export default function Page() {
                       )}
                       {gameStep === 2 && (
                         <Game2_ChoosePhoto
-                          correct={DUMMY_IMAGES.correct}
-                          others={[DUMMY_IMAGES.other1, DUMMY_IMAGES.other2, DUMMY_IMAGES.other3]}
+                          correct={IMAGES.correct}
+                          others={[IMAGES.other1, IMAGES.other2, IMAGES.other3]}
                           onSuccess={() => { markPassed(2); setTimeout(() => setGameStep(3), 350); }}
                         />
                       )}

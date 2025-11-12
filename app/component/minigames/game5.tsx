@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { shuffleArray, DUMMY_IMAGES } from '../utils';
+import { shuffleArray, IMAGES } from '../utils';
 /* -------------------------
    Game 5: Puzzle 3x3 (click-two-swap)
    ------------------------- */
@@ -61,7 +61,7 @@ function TileImage({ tileIndex }: { tileIndex: number }) {
         style={{
           width: '100%',
           height: '100%',
-          backgroundImage: `url('${DUMMY_IMAGES.correct}')`,
+          backgroundImage: `url('${IMAGES.other4}')`,
           backgroundSize: '300% 300%',
           backgroundPosition: `${posX}% ${posY}%`,
           backgroundRepeat: 'no-repeat',

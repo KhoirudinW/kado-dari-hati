@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { DUMMY_IMAGES } from '../utils';
+import { IMAGES } from '../utils';
 
 export function Game3_DragHeart({ onSuccess }: { onSuccess: () => void }) {
   const [progress, setProgress] = useState(0);
@@ -49,7 +49,7 @@ export function Game3_DragHeart({ onSuccess }: { onSuccess: () => void }) {
             }`}
           >
             <img
-              src={DUMMY_IMAGES.correct}
+              src={IMAGES.she}
               alt="partner"
               className="w-full h-full object-cover"
             />
