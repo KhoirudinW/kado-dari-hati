@@ -132,7 +132,43 @@ export default function Page() {
     setHearts(temp);
   }, []);
 
+  const [showAndroidWarning, setShowAndroidWarning] = useState(false);
+
+  useEffect(() => {
+    if (typeof navigator !== "undefined") {
+      const ua = navigator.userAgent || navigator.vendor;
+      const isAndroid = /android/i.test(ua);
+      if (!isAndroid) {
+        setShowAndroidWarning(true);
+      }
+    }
+  }, []);
+
   // ==================================================
+  if (showAndroidWarning) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-pink-100 to-rose-200 text-center p-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/90 p-8 rounded-3xl shadow-xl max-w-sm"
+        >
+          <h1 className="text-3xl font-bold text-rose-600 mb-4">
+            🌸 Gunakan Android 🌸
+          </h1>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Hai cantik 💕<br />
+            Website ini dibuat khusus agar tampil <b>super cute dan interaktif</b> di Android.
+            Coba buka pakai HP Android ya 😚
+          </p>
+          <div className="text-sm text-rose-500 italic">
+            Dibuat dengan cinta 💖
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-pink-100 to-rose-100 flex items-center justify-center p-6 relative overflow-hidden">
