@@ -19,13 +19,13 @@ export const DUMMY_IMAGES = {
   other3: 'https://picsum.photos/id/1025/600/600',
 };
 export const IMAGES = {
-  correct: 'img/gweh.jpg', // partner placeholder
-  other1: 'img/bukan-gweh1.jpg',
-  other2: 'img/bukan-gweh2.jpg',
-  other3: 'img/bukan-gweh3.jpg',
-  other4: 'img/img1.jpg',
-  other5: 'img/img2.jpg',
-  other6: 'img/img3.jpg',
-  she: 'img/she.jpg',
+  correct: '/img/gweh.jpg', // partner placeholder
+  other1: '/img/bukan-gweh1.jpg',
+  other2: '/img/bukan-gweh2.jpg',
+  other3: '/img/bukan-gweh3.jpg',
+  other4: '/img/img1.jpg',
+  other5: '/img/img2.jpg',
+  other6: '/img/img3.jpg',
+  she: '/img/she.jpg',
 };
 /* ============================ */

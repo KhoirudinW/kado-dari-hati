@@ -22,8 +22,18 @@ export function Game3_DragHeart({ onSuccess }: { onSuccess: () => void }) {
       <div className="relative flex items-center justify-between w-full max-w-md mx-auto mt-6">
         {/* Kamu */}
         <div className="flex flex-col items-center gap-2">
-          <div className="w-20 h-20 rounded-full bg-pink-200 flex items-center justify-center text-3xl select-none">
-            🫶
+        <div
+            className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 overflow-hidden transition-all ${
+              progress >= 100
+                ? 'border-rose-400 scale-105 shadow-lg'
+                : 'border-gray-200'
+            }`}
+          >
+            <img
+              src={IMAGES.she}
+              alt="partner"
+              className="w-full h-full object-cover"
+            />
           </div>
           <span className="text-xs text-gray-600">Kamu</span>
         </div>
@@ -49,7 +59,7 @@ export function Game3_DragHeart({ onSuccess }: { onSuccess: () => void }) {
             }`}
           >
             <img
-              src={IMAGES.she}
+              src={IMAGES.correct}
               alt="partner"
               className="w-full h-full object-cover"
             />
