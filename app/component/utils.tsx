@@ -26,6 +26,8 @@ export const IMAGES = {
   other4: '/img/img1.jpg',
   other5: '/img/img2.jpg',
   other6: '/img/img3.jpg',
+  pzl1: '/img/puzzle1.jpg',
+  pzl2: '/img/puzzle2.jpg',
   she: '/img/she.jpg',
 };
 /* ============================ */

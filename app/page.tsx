@@ -114,6 +114,14 @@ export default function Page() {
   function finalSubmit() {
     console.log('Final submit form:', form);
     alert('Sukses! Sekarang lanjut ke kado 💞');
+
+    // Trigger download
+    const link = document.createElement('a');
+    link.href = '/app/PAPin.zip';   // ganti dengan nama file kamu
+    link.download = 'kado.zip';        // nama file saat di-download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 
   //===============logika floating heart===============

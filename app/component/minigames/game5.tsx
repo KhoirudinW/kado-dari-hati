@@ -48,6 +48,10 @@ export function Game5_Puzzle({ onSuccess }: { onSuccess: () => void }) {
   );
 }
 
+const puzzleImages = [IMAGES.pzl1, IMAGES.pzl2];
+
+const randomPuzzle = puzzleImages[Math.floor(Math.random() * puzzleImages.length)];
+
 
 /* render a slice of the image by background-position. assumes 3x3 */
 function TileImage({ tileIndex }: { tileIndex: number }) {
@@ -61,7 +65,7 @@ function TileImage({ tileIndex }: { tileIndex: number }) {
         style={{
           width: '100%',
           height: '100%',
-          backgroundImage: `url('${IMAGES.other4}')`,
+          backgroundImage: `url('${randomPuzzle}')`,
           backgroundSize: '300% 300%',
           backgroundPosition: `${posX}% ${posY}%`,
           backgroundRepeat: 'no-repeat',
